@@ -1,6 +1,12 @@
-# SentiFlow AI — Enterprise Sentiment Intelligence Platform
+# 🧠 SentiFlow AI — Enterprise Sentiment Intelligence Platform
 
 SentiFlow AI is a cognitive customer-feedback analytics platform that performs real-time sentiment classification, grammar correction, slang normalization, and emotion classification. It compiles actionable business insights, visualizes distributions and timeline trends, and generates multi-format reports (PDF, CSV, Excel).
+
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?logo=mongodb)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?logo=scikitlearn)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
