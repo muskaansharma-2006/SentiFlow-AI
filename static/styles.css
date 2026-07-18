@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600;700&display=swap');
+
+.block-container {
+    padding-top: 1.5rem;
+    max-width: 1200px;
+}
+
+/* Typography & Headers */
+h1, h2, h3, .app-title {
+    font-family: 'Outfit', 'Inter', sans-serif;
+}
+body, p, span, div, textarea {
+    font-family: 'Inter', sans-serif;
+}
+
+.app-title {
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 2.8rem;
+    margin-bottom: 0.2rem;
+    transition: all 0.3s ease;
+}
+.app-subtitle {
+    color: #64748b;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+/* SaaS Dashboard Sidebar Customizations */
+section[data-testid="stSidebar"] {
+    background-color: #0f172a !important; /* Dark Slate slate-900 */
+    border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+section[data-testid="stSidebar"] h3 {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+section[data-testid="stSidebar"] p {
+    color: #94a3b8 !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stRadio"] label {
+    color: #cbd5e1 !important;
+    font-weight: 500 !important;
+    font-size: 0.95rem !important;
+}
+
+/* Status Badges */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+    font-size: 0.7rem;
+    padding: 6px 12px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.status-badge.connected {
+    background-color: rgba(34, 197, 94, 0.12);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.2);
+}
+.status-badge.sandbox {
+    background-color: rgba(245, 158, 11, 0.12);
+    color: #f59e0b;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+/* Rounded Glass Input Box */
+.stTextArea textarea {
+    border-radius: 18px !important;
+    border: 1.5px solid rgba(59, 130, 246, 0.15) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03) !important;
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    padding: 1.1rem 1.3rem !important;
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease !important;
+}
+.stTextArea textarea:focus {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 3.5px rgba(59, 130, 246, 0.18), 0 4px 15px rgba(0, 0, 0, 0.03) !important;
+}
+
+/* Review Chip Buttons */
+button[data-testid="stBaseButton-secondary"] {
+    border-radius: 50px !important;
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+    background-color: var(--secondary-background-color) !important;
+    border: 1px solid rgba(59, 130, 246, 0.15) !important;
+    color: var(--text-color) !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    padding: 0.3rem 1.1rem !important;
+}
+button[data-testid="stBaseButton-secondary"]:hover {
+    border-color: #3b82f6 !important;
+    color: #3b82f6 !important;
+    background-color: rgba(59, 130, 246, 0.05) !important;
+    transform: translateY(-1.5px) !important;
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.08) !important;
+}
+button[data-testid="stBaseButton-secondary"]:active {
+    transform: translateY(0px) !important;
+}
+
+/* Full Width Analyze Button Gradient */
+button[data-testid="stBaseButton-primary"] {
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%) !important;
+    color: #ffffff !important;
+    border-radius: 14px !important;
+    border: none !important;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+    letter-spacing: 0.02em;
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.25) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    padding: 0.7rem 2.2rem !important;
+}
+button[data-testid="stBaseButton-primary"]:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 22px rgba(59, 130, 246, 0.4) !important;
+    opacity: 0.96;
+}
+button[data-testid="stBaseButton-primary"]:active {
+    transform: translateY(0px) !important;
+}
+
+/* Modern Dashboard Cards */
+.metric-card {
+    background-color: var(--background-color);
+    border: 1px solid rgba(59, 130, 246, 0.12);
+    border-radius: 16px;
+    padding: 1.2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.metric-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.08);
+    border-color: rgba(139, 92, 246, 0.35);
+}
+.metric-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #8a9cb5;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.3rem;
+}
+.metric-val {
+    font-size: 1.85rem;
+    font-weight: 800;
+    margin-bottom: 0.15rem;
+}
+.metric-sub {
+    font-size: 0.72rem;
+    color: #64748b;
+}
+
+/* Placeholder Insights Card */
+.placeholder-card {
+    border: 2px dashed rgba(59, 130, 246, 0.22);
+    border-radius: 20px;
+    padding: 3.5rem 2rem;
+    text-align: center;
+    background-color: rgba(59, 130, 246, 0.01);
+    color: #64748b;
+    transition: all 0.3s ease;
+}
+.placeholder-card:hover {
+    border-color: rgba(59, 130, 246, 0.4);
+    background-color: rgba(59, 130, 246, 0.03);
+}
+.placeholder-icon {
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+    display: block;
+}
+.placeholder-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #3b82f6;
+    margin-bottom: 0.6rem;
+}
+.placeholder-desc {
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+/* Sentiment badges */
+.sentiment-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.badge-positive {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+.badge-negative {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+.badge-neutral {
+    background-color: #fef3c7;
+    color: #b45309;
+}
