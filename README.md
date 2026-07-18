@@ -9,7 +9,21 @@ SentiFlow AI is a cognitive customer-feedback analytics platform that performs r
 1. **Cognitive Sentiment Analysis**: Multi-class classification (Positive, Negative, Neutral) with confidence metrics and probability breakdowns.
 2. **Dynamic Emotion Classification**: Extracts underlying customer emotional states (e.g. *happy, excited, angry, frustrated, sad, neutral*).
 3. **Advanced Voice Review Pipeline**:
-   $$\text{Voice Recording (st.audio\_input)} \longrightarrow \text{Speech-to-Text} \longrightarrow \text{Grammar Correction} \longrightarrow \text{Slang Map Normalization} \longrightarrow \text{NLP Cleaning} \longrightarrow \text{Inference} \longrightarrow \text{MongoDB}$$
+```text
+Voice Recording (st.audio_input)
+        ↓
+Speech-to-Text
+        ↓
+Grammar Correction
+        ↓
+Slang Normalization
+        ↓
+NLP Cleaning
+        ↓
+Sentiment & Emotion Prediction
+        ↓
+MongoDB Storage
+```
 4. **Context & Category Diagnostics**: Detects customer feedback domains (e.g. *food, hotel, app, service*) and extracts pain points (errors, delays, support).
 5. **Interactive Analytics Dashboard**: Beautiful metric cards, interactive Altair donuts/bar charts, confidence histograms, time trends (daily/weekly/monthly), and automated word clouds.
 6. **Business Insights Center**: Automatic compilation of Customer Satisfaction (CSAT) scores, Brand Reputation Index, and priority suggestions.
