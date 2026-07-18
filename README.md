@@ -8,6 +8,10 @@ SentiFlow AI is a cognitive customer-feedback analytics platform that performs r
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?logo=scikitlearn)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+![GitHub last commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/sentiflow-ai)
+![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/sentiflow-ai)
+![GitHub forks](https://img.shields.io/github/forks/YOUR_USERNAME/sentiflow-ai)
+
 ---
 
 ## ⚡ Key Features
